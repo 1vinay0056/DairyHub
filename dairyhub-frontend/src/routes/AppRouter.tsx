@@ -17,7 +17,7 @@ import Contact from "../pages/Contact/Contact";
 import Subscription from "../pages/Subscription/Subscription";
 import Cart from "../pages/Cart/Cart";
 import Checkout from "../pages/Checkout/checkout";
-import Orders from "../pages/orders/orders";
+import Orders from "../pages/orders/Orders";
 import Order from "../pages/orders/Order";
 import Profile from "../pages/Profile/Profile";
 import Wishlist from "../pages/Wishlist/Wishlist";
