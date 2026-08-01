@@ -21,6 +21,7 @@ app.add_middleware(
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],
+    allow_origins="https://.*\.vercel\.app",
 )
 app.include_router(subscription_router)
 app.include_router(product_router)
