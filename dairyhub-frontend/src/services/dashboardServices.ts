@@ -1,23 +1,9 @@
-import axios from "axios";
-
-
-const API = "http://127.0.0.1:8000";
+import api from "./api";
 
 export const getDashboardData = async () => {
-  const token = localStorage.getItem("token");
-
-  const response = await axios.get(
-    `${API}/admin/dashboard`,
-    {
-      headers: {
-        Authorization: `Bearer ${token}`,
-      },
-    }
-  );
-
+  const response = await api.get("/admin/dashboard");
   return response.data;
 };
-import api from "./api";
 
 export const globalSearch = async (query: string) => {
   const response = await api.get("/search", {
