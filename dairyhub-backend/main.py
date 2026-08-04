@@ -36,7 +36,6 @@ app.include_router(dashboard_router)
 app.include_router(user_router)
 app.include_router(profile_router)
 app.include_router(contact_router)
-
 @app.get("/")
 def home():
     return {"message": "Welcome to DairyHub Backend"}
